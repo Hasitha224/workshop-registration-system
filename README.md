@@ -1,4 +1,4 @@
-# Workshop Registration Service
+# Workshop Registration System
 
 A full stack app for a community training centre to manage workshops and attendee registrations. Staff register and cancel attendees, managers schedule workshops, and admins manage staff accounts. A workshop can never hold more active registrations than its capacity, even when many staff register people at the same moment.
 
