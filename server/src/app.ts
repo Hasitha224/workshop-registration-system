@@ -3,6 +3,7 @@ import express from "express";
 import helmet from "helmet";
 import { env } from "./config/env.js";
 import { AppError } from "./utils/app-error.js";
+import routes from "./routes/index.js";
 
 const app = express();
 
@@ -28,8 +29,7 @@ app.use(
 app.use(express.json({ limit: "1mb" }));
 app.use(express.urlencoded({ extended: true, limit: "1mb" }));
 
-
-// app.use("/api/v1/tickets", ticketRoutes);
+app.use("/api/v1", routes);
 app.get("/api/v1/health", (_req, res) => {
   res.status(200).json({
     success: true,
