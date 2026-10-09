@@ -1,0 +1,1 @@
+export const REG_STATUSES = ['active', 'cancelled'] as const;

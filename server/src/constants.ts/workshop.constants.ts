@@ -1,0 +1,1 @@
+export const WORKSHOP_STATUSES = ['draft', 'open', 'cancelled', 'completed'] as const;
